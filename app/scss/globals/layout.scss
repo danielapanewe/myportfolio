@@ -1,0 +1,23 @@
+@use '../util' as *;
+
+:root {
+    --header-height: 3rem;
+}
+.container {
+    max-width: rem(980);
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+
+    @include breakpoint-down(extrasmaller) {
+        margin: 0 auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    @include breakpoint(xxmedium) {
+        margin: 0 auto;
+    }
+}
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}

@@ -1,0 +1,38 @@
+@use '../util' as *;
+
+.footer {
+    padding-top: 2rem;
+
+    &__bg {
+        background-color: var(--first-color);
+    }
+    &__container {
+        row-gap: 3.5rem;
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    &__title {
+        font-size: var(--h1-font-size);
+        margin-bottom: var(--mb-0-25);
+    }
+    &__subtitle {
+        font-size: var(--small-font-size);
+    }
+
+    &__sociallink {
+        font-size: 1.25rem;
+        margin-right: var(--mb-1-5);
+    }
+    &__sociallink:hover {
+        color: var(--first-color-lighter);
+    }
+    &__copyright {
+        font-size: var(--smaller-font-size);
+        text-align: center;
+        color: var(--text-color-light);
+    }
+    &__title,
+    &__subtitle,
+    &__sociallink {
+        color: var(--container-color);
+    }
+}

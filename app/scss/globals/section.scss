@@ -1,0 +1,20 @@
+@use '../util' as *;
+section {
+    padding: 2rem 0.5rem 4rem 0.5rem;
+    margin: 0 auto;
+
+    @include breakpoint(xxmedium) {
+        padding: 6rem 0 2rem;
+    }
+
+    .section__title {
+        font-size: var(--h1-font-size);
+        text-align: center;
+    }
+    .section__subtitle {
+        display: block;
+        font-size: var(--small-font-size);
+        margin-bottom: var(--mb-3);
+        text-align: center;
+    }
+}

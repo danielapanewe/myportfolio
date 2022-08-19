@@ -1,0 +1,92 @@
+@use '../util' as *;
+
+// .skills {
+//     gap: 4rem;
+// }
+
+.skills {
+    @include breakpoint(xmedium) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.skills__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+.skills__icon {
+    color: var(--first-color);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.skills__title {
+    text-transform: uppercase;
+    font-size: var(--h3-font-size);
+}
+
+.skills__title:hover,
+.skills__icon:hover {
+    color: var(--first-color-alt);
+}
+
+.skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    font-size: var(--small-font-size);
+}
+
+.skills__bar,
+.skills__pourcentage {
+    height: 0.4rem;
+    border-radius: 0.25rem;
+}
+.skills__bar {
+    background-color: var(--first-color-lighter);
+}
+.skills__pourcentage {
+    display: block;
+    background-color: var(--first-color);
+}
+.skills__html {
+    width: 90%;
+}
+.skills__bootstrap,
+.skills__uml {
+    width: 70%;
+}
+.skills__css {
+    width: 60%;
+}
+.skills__mysql {
+    width: 50%;
+}
+.skills__javascript,
+.skills__java {
+    width: 30%;
+}
+.skills__angular {
+    width: 50%;
+}
+.skills__spring {
+    width: 40%;
+}
+.skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+}
+.skills__open .skills__list {
+    height: max-content;
+}
+.skills__open .skills__icon {
+    transform: rotate(-180deg);
+    color: var(--first-color);
+    padding-top: 2rem;
+}

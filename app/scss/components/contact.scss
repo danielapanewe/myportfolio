@@ -1,0 +1,63 @@
+@use '../util' as *;
+
+.contact {
+    &__container {
+        row-gap: 3rem;
+
+        @include breakpoint(xmedium) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__information {
+        @include breakpoint(xmedium) {
+            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__icon {
+        font-size: 2rem;
+        color: var(--first-color);
+        margin-right: var(--mb-0-75);
+
+        @include breakpoint-down(extrasmaller) {
+            font-size: 1.5rem;
+        }
+    }
+    &__name {
+        font-size: var(--h3-font-size);
+        color: var(--text-color);
+
+        @include breakpoint-down(extrasmaller) {
+            font-size: var(--normal-font-size);
+        }
+    }
+    &__content {
+        background-color: var(--input-color);
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem 0.25rem;
+    }
+    &__label {
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+    }
+    &__input {
+        width: 100%;
+        background-color: var(--input-color);
+        color: var(--text-color);
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        border: none;
+        outline: none;
+        padding: 0.25rem 0.5rem 0.5rem 0;
+    }
+    &__submit {
+        justify-self: start;
+    }
+    &__input--submit {
+        background-color: var(--first-color);
+        width: 100%;
+        color: var(--container-color);
+        border: none;
+    }
+}

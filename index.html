@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+        <link rel="icon" href="img/favicon.jpg" />
+        <link rel="apple-touch-icon" href="img/favicon (1).jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Daniela's Portfolio</title>
+        <link rel="stylesheet" href="dist/style.css" />
+        <script defer src="dist/script.js"></script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="header__content container">
+                <a href="#home" class="header__logo">Daniela</a>
+                <nav class="header__nav">
+                    <ul class="header__list grid">
+                        <li class="header__item">
+                            <a href="#" class="header__link">
+                                <i class="uil uil-estate header__icon"></i>
+                                Home</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="#apropos" class="header__link">
+                                <i class="uil uil-user header__icon"></i>A
+                                propos</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="#skills" class="header__link">
+                                <i class="uil uil-channel header__icon"></i
+                                >Compétences</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="#experience" class="header__link">
+                                <i
+                                    class="uil uil-briefcase-alt header__icon"
+                                ></i
+                                >Expériences</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="#projet" class="header__link">
+                                <i class="uil uil-scenery header__icon"></i
+                                >Réalisations</a
+                            >
+                        </li>
+                        <li class="header__item">
+                            <a href="#contact" class="header__link">
+                                <i class="uil uil-message header__icon"></i
+                                >Contact</a
+                            >
+                        </li>
+                        <i class="uil uil-times header__close"></i>
+                    </ul>
+                </nav>
+                <div class="header__btn">
+                    <!-- TO CHANGE THEME -->
+
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="header__toggle" id="header__toggle">
+                        <i class="uil uil-apps burger"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a
+                                href="https://github.com/danielapanewe"
+                                class="home__sociallink"
+                                target="_blank"
+                            >
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/daniela-panewe-058657202"
+                                class="home__sociallink"
+                                target="_blank"
+                            >
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+
+                            <a
+                                href="mailto:danielapanewe@gmail.com"
+                                class="home__sociallink"
+                                target="_blank"
+                            >
+                                <i class="uil uil-envelope-alt"></i>
+                            </a>
+                        </div>
+                        <div class="home__img">
+                            <svg
+                                class="home__blob"
+                                viewBox="0 0 200 187"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                            >
+                                <mask id="mask0" mask-type="alpha">
+                                    <path
+                                        d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+									130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+									97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+									0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                                    />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path
+                                        d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+									165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+									129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+									-0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                                    />
+                                    <image
+                                        class="home__blobimg"
+                                        href="img/WhatsApp Image 2022-08-16 at 14.53.54.jpeg"
+                                        y="-45"
+                                    />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="home__text">
+                            <h1 class="home__title">Hi, je suis Daniela</h1>
+                            <h3 class="home__subtitle">
+                                Développeuse frontend
+                            </h3>
+                            <p class="home__description">
+                                Créer des interfaces attractives en alliant
+                                diverses technologies et techniques reste ma
+                                principale passion.
+                            </p>
+                            <a
+                                href="#contact"
+                                class="home__button btn btn_flex"
+                            >
+                                Me contacter
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                        <div class="home__scroll">
+                            <a
+                                href="#apropos"
+                                class="home__scroll--link btn_flex"
+                            >
+                                <span class="home__scroll--name"
+                                    >Défilez vers le bas</span
+                                >
+                                <i
+                                    class="uil uil-arrow-down home__scroll--icon"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -----------------SECTON A PROPOS-------------- -->
+            <section class="about" id="apropos">
+                <h1 class="section__title">A propos de moi</h1>
+                <h3 class="section__subtitle">Qui suis-je?</h3>
+                <div class="about__container container grid">
+                    <img
+                        src="img/DSC00449.jpg"
+                        alt="une photo de moi"
+                        class="about__img"
+                    />
+                    <div class="about__text">
+                        <p class="about__description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Excepturi, eveniet? Ab laborum dignissimos,
+                            iusto distinctio dolorem odit sunt. Dolores
+                            dignissimos incidunt vitae amet nesciunt voluptas
+                            provident quam excepturi doloribus nemo?
+                        </p>
+                        <div class="about__info">
+                            <div class="about__info--item">
+                                <p class="about__info--number">12+</p>
+                                <p class="about__info--text">
+                                    Mois <br />
+                                    d'expériences
+                                </p>
+                            </div>
+                            <div class="about__info--item">
+                                <p class="about__info--number">5+</p>
+                                <p class="about__info--text">
+                                    Projets <br />réalisés
+                                </p>
+                            </div>
+                            <div class="about__info--item">
+                                <p class="about__info--number">5+</p>
+                                <p class="about__info--text">
+                                    Langages<br />
+                                    maîtrisés
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about__btn">
+                            <a
+                                download=""
+                                href="pdf/minecv2.pdf"
+                                class="about__btn btn btn_flex"
+                            >
+                                Mon CV
+                                <i class="uil uil-import"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------section skills----------- -->
+            <section class="skills__section" id="skills">
+                <h1 class="section__title">Compétences</h1>
+                <h3 class="section__subtitle">Les technologies maîtrisées</h3>
+                <div class="skills grid container">
+                    <div class="skill__container skills__close">
+                        <div class="skills__header">
+                            <h1 class="skills__title">Langages</h1>
+
+                            <i class="uil uil-angle-down skills__icon"></i>
+                        </div>
+                        <div class="skills__list">
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__html"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__css"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">SASS</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__css"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__javascript"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JAVA</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__java"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FRAMEWORK -->
+                    <div class="skill__container skills__close">
+                        <div class="skills__header">
+                            <h1 class="skills__title">FRAMEWORKS</h1>
+                            <i class="uil uil-angle-down skills__icon"></i>
+                        </div>
+                        <div class="skills__list">
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Angular</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__angular"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__bootstrap"
+                                    ></span>
+                                </div>
+                            </div>
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Spring Boot</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__spring"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SGBD -->
+                    <div class="skill__container skills__close">
+                        <div class="skills__header">
+                            <h1 class="skills__title">SGBD</h1>
+                            <i class="uil uil-angle-down skills__icon"></i>
+                        </div>
+                        <div class="skills__list">
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MySql</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__mysql"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- analyse -->
+                    <div class="skill__container skills__close">
+                        <div class="skills__header">
+                            <h1 class="skills__title">Langage Modélisation</h1>
+                            <i class="uil uil-angle-down skills__icon"></i>
+                        </div>
+                        <div class="skills__list">
+                            <div class="skills__content">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">UML</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span
+                                        class="skills__pourcentage skills__uml"
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------section experience----------- -->
+            <section class="experience" id="experience">
+                <h1 class="section__title">Expériences</h1>
+                <h3 class="section__subtitle">
+                    Mon expérience professionnelle & scolaire
+                </h3>
+                <div class="experience__container container">
+                    <div class="experience__tabs">
+                        <div
+                            class="experience__button btn_flex experience__active"
+                            data-target="#education"
+                        >
+                            <i
+                                class="uil uil-graduation-cap experience_icon"
+                            ></i>
+
+                            Scolaire
+                        </div>
+                        <div
+                            class="experience__button btn_flex experience_icon"
+                            data-target="#professionnal"
+                        >
+                            <i class="uil uil-bag-alt experience_icon"></i>
+
+                            Professionnel
+                        </div>
+                    </div>
+                    <div class="experience__sections">
+                        <div
+                            class="experience__content experience__active"
+                            data-content
+                            id="education"
+                        >
+                            <!-- exp 1 -->
+                            <div class="experience__text">
+                                <div>
+                                    <h3 class="experience__title">
+                                        Licence en génie logiciel
+                                    </h3>
+                                    <span class="experience__subtitle"
+                                        >IUGET - Douala</span
+                                    >
+                                    <div class="experience__date">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2022
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                            </div>
+                            <!-- exp 2 -->
+                            <div class="experience__text">
+                                <div></div>
+                                <div>
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="experience__title">
+                                        Baccalauréat scientifique
+                                    </h3>
+                                    <span class="experience__subtitle"
+                                        >Collège les pintades - Ngaoundéré</span
+                                    >
+                                    <div class="experience__date">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2019
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- exp 3 -->
+                            <div class="experience__text">
+                                <div>
+                                    <h3 class="experience__title">
+                                        Bepc bilingue
+                                    </h3>
+                                    <span class="experience__subtitle"
+                                        >Collège les pintades - Ngaoundéré</span
+                                    >
+                                    <div class="experience__date">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2015 - 2016
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- --------------------Qexperience content 2 -->
+                        <div
+                            class="experience__content"
+                            data-content
+                            id="professionnal"
+                        >
+                            <!-- exp 1 -->
+                            <div class="experience__text">
+                                <div>
+                                    <h3 class="experience__title">
+                                        Stage en web
+                                    </h3>
+                                    <span class="experience__subtitle"
+                                        >DigitalX - Douala</span
+                                    >
+                                    <div class="experience__date">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Mars 2022 - A nos jours
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                            </div>
+                            <!-- exp 2 -->
+                            <div class="experience__text">
+                                <div></div>
+                                <div>
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div>
+                                    <h3 class="experience__title">
+                                        Stage en web
+                                    </h3>
+                                    <span class="experience__subtitle"
+                                        >Camrail - Douala</span
+                                    >
+                                    <div class="experience__date">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Juin 2021 - Aout 2021
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- exp 3 -->
+                            <div class="experience__text">
+                                <div>
+                                    <h3 class="experience__title">
+                                        Bepc bilingue
+                                    </h3>
+                                    <span class="experience__subtitle"
+                                        >Collège les pintades - Ngaoundéré</span
+                                    >
+                                    <div class="experience__date">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2015 - 2016
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------section projet----------- -->
+            <section class="projet" id="projet">
+                <h1 class="section__title">Réalisations</h1>
+                <h3 class="section__subtitle">Quelques projets réalisés</h3>
+                <div class="projet__container container">
+                    <div class="projet__body">
+                        <!-- first projetct -->
+                        <div class="projet__content grid">
+                            <img
+                                src="img/home.png"
+                                alt="image site de DX"
+                                class="projet__img"
+                            />
+
+                            <div class="projet__text">
+                                <h3 class="projet__title">Site web</h3>
+                                <p class="projet__paragraph">
+                                    Il s'agit ici de la première version du site
+                                    de DX
+                                </p>
+                                <p class="projet__technologie">
+                                    <span class="projet__technologie--item"
+                                        >HTML</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >CSS3</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >Javascript</span
+                                    >
+                                </p>
+                                <a href="#" class="btn projet__button btn_flex"
+                                    >Regarder
+                                    <i class="uil uil-eye projet__icon"></i
+                                ></a>
+                            </div>
+                        </div>
+
+                        <!-- secondt projetct -->
+                        <div class="projet__content grid">
+                            <img
+                                src="img/omnifood.png"
+                                alt="image site de DX"
+                                class="projet__img"
+                            />
+
+                            <div class="projet__text">
+                                <h3 class="projet__title">Site web</h3>
+                                <p class="projet__paragraph">
+                                    Il s'agit ici d'un landing page représentant
+                                    les services offerts par un restaurant
+                                </p>
+                                <p class="projet__technologie">
+                                    <span class="projet__technologie--item"
+                                        >HTML</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >CSS3</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >Javascript</span
+                                    >
+                                </p>
+                                <a href="#" class="btn projet__button btn_flex"
+                                    >Regarder
+                                    <i class="uil uil-eye projet__icon"></i
+                                ></a>
+                            </div>
+                        </div>
+
+                        <!-- third projetct -->
+                        <div class="projet__content grid">
+                            <img
+                                src="img/home.png"
+                                alt="image site de DX"
+                                class="projet__img"
+                            />
+
+                            <div class="projet__text">
+                                <h3 class="projet__title">Site web</h3>
+                                <p class="projet__paragraph">
+                                    Il s'agit de la réproduction de quelques
+                                    pages du site de blueFontier
+                                </p>
+                                <p class="projet__technologie">
+                                    <span class="projet__technologie--item"
+                                        >SASS</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >HTML</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >JAVASCRIPT</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >GULP</span
+                                    >
+                                </p>
+                                <a href="#" class="btn projet__button btn_flex"
+                                    >Regarder
+                                    <i class="uil uil-eye projet__icon"></i
+                                ></a>
+                            </div>
+                        </div>
+
+                        <!-- FOURTH projetct -->
+                        <div class="projet__content grid">
+                            <img
+                                src="img/home.png"
+                                alt="image site de DX"
+                                class="projet__img"
+                            />
+
+                            <div class="projet__text">
+                                <h3 class="projet__title">Application web</h3>
+                                <p class="projet__paragraph">
+                                    Il s'agit d'une application web de gestion
+                                    de stagiaire
+                                </p>
+                                <p class="projet__technologie">
+                                    <span class="projet__technologie--item"
+                                        >Angular</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >Spring</span
+                                    >
+                                    <span class="projet__technologie--item"
+                                        >Bootstrap</span
+                                    >
+                                </p>
+                                <a href="#" class="btn projet__button btn_flex"
+                                    >Regarder
+                                    <i class="uil uil-eye projet__icon"></i
+                                ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ------------section CONTACT----------- -->
+            <section class="contact" id="contact">
+                <h1 class="section__title">Me Contacter</h1>
+                <h3 class="section__subtitle">
+                    Envoyez moi un mail et je vous répondrai
+                </h3>
+                <div class="contact__container container grid">
+                    <div class="contact__information grid">
+                        <a
+                            href="tel:691214688"
+                            class="contact__information--item btn_flex"
+                        >
+                            <i class="uil uil-phone-alt contact__icon"></i>
+                            <span class="contact__name"
+                                >(+237) 691 214 688</span
+                            >
+                        </a>
+
+                        <a
+                            href="mailto:danielapanewe@gmail.com"
+                            class="contact__information--item btn_flex"
+                        >
+                            <i class="uil uil-envelope-alt contact__icon"></i>
+                            <span class="contact__name"
+                                >danielapanewe@gmail.com</span
+                            >
+                        </a>
+
+                        <span class="contact__information--item btn_flex">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <span class="contact__name">Douala Cameroun</span>
+                        </span>
+                    </div>
+
+                    <!-- formulaire -->
+                    <form class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="nom" class="contact__label"
+                                    >Nom</label
+                                >
+                                <input
+                                    type="text"
+                                    class="contact__input"
+                                    name="nom"
+                                    required
+                                />
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="email" class="contact__label"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="contact__input"
+                                    name="email"
+                                    required
+                                />
+                            </div>
+
+                            <div class="contact__content">
+                                <label for="message" class="contact__label"
+                                    >Message</label
+                                >
+                                <textarea
+                                    name="message"
+                                    id=""
+                                    cols="0"
+                                    rows="7"
+                                    class="contact__input"
+                                    required
+                                ></textarea>
+                            </div>
+
+                            <div class="btn btn_flex contact__submit">
+                                <input
+                                    type="submit"
+                                    value="Envoyer"
+                                    class="contact__input--submit"
+                                />
+
+                                <i class="uil uil-message"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Daniela</h1>
+                        <span class="footer__subtitle"
+                            >Développeuse frontend</span
+                        >
+                    </div>
+
+                    <div class="footer__social">
+                        <a
+                            href="https://github.com/danielapanewe"
+                            class="footer__sociallink"
+                            target="_blank"
+                        >
+                            <i class="uil uil-github"></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/daniela-panewe-058657202"
+                            class="footer__sociallink"
+                            target="_blank"
+                        >
+                            <i class="uil uil-linkedin"></i>
+                        </a>
+
+                        <a href="#" class="footer__sociallink" target="_blank">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+
+                        <a href="#" class="footer__sociallink" target="_blank">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+
+                        <a href="#" class="footer__sociallink" target="_blank">
+                            <i class="uil uil-twitter-alt"></i>
+                        </a>
+                    </div>
+
+                    <p class="footer__copyright">
+                        &copy; By Daniela. All right reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- -----------scroll up---------- -->
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+    </body>
+</html>

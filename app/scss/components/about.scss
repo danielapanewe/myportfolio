@@ -1,0 +1,56 @@
+@use '../util' as *;
+.about {
+    &__container {
+        @include breakpoint(xmedium) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__img {
+        width: 300px;
+        border-radius: 0.5rem;
+        justify-self: center;
+        align-self: center;
+
+        @include breakpoint(xmedium) {
+            width: 100%;
+        }
+    }
+    &__description {
+        text-align: center;
+        margin-bottom: var(--mb-2-5);
+
+        @include breakpoint(xmedium) {
+            text-align: left;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: var(--mb-2-5);
+
+        @include breakpoint(xxmedium) {
+            justify-content: space-between;
+        }
+    }
+    &__info--number {
+        font-size: var(--h2-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--title-color);
+    }
+    &__info--number,
+    &__info--text {
+        display: block;
+        text-align: center;
+    }
+    &__info--text {
+        font-size: var(--smaller-font-size);
+    }
+    &__btn {
+        display: flex;
+        justify-content: center;
+
+        @include breakpoint(xxmedium) {
+            justify-content: initial;
+        }
+    }
+}
