@@ -12,8 +12,13 @@
         align-self: center;
 
         @include breakpoint(xmedium) {
+            width: 100%;}
+        @include breakpoint-down(small){
+            height: 90%;
+            object-fit: cover;
             width: 100%;
         }
+
     }
     &__description {
         text-align: center;

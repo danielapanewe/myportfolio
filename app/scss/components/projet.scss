@@ -3,6 +3,8 @@
 .projet {
     &__container {
         overflow: initial;
+        height: 65vh;
+        overflow-y: scroll;
     }
     &__body {
         gap: 2rem;

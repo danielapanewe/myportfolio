@@ -38,6 +38,7 @@ function toggleSkills() {
     if (itemClass === 'skill__container skills__close') {
         this.parentNode.className = 'skill__container skills__open';
     }
+    
 }
 skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills);

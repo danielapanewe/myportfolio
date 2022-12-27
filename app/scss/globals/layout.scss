@@ -13,6 +13,9 @@
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
+    @include breakpoint-down(small) {
+        max-width: 50rem;
+    }
     @include breakpoint(xxmedium) {
         margin: 0 auto;
     }

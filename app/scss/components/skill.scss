@@ -25,10 +25,12 @@
     color: var(--first-color);
     font-size: 2rem;
     padding-bottom: 1rem;
+    cursor: pointer;
 }
 .skills__title {
     text-transform: uppercase;
     font-size: var(--h3-font-size);
+    cursor: pointer;
 }
 
 .skills__title:hover,
