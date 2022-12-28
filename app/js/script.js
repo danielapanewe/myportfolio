@@ -24,25 +24,7 @@ function removemenu() {
 }
 headerlink.forEach((n) => n.addEventListener('click', removemenu));
 
-///////////////////////////////////////////////////////////
-// pour les listes déroulantes de skills
-let i;
-const skillsContainer = document.getElementsByClassName('skill__container'),
-    skillsHeader = document.querySelectorAll('.skills__header');
 
-function toggleSkills() {
-    let itemClass = this.parentNode.className;
-    for (i = 0; i < skillsContainer.length; i++) {
-        skillsContainer[i].className = 'skill__container skills__close';
-    }
-    if (itemClass === 'skill__container skills__close') {
-        this.parentNode.className = 'skill__container skills__open';
-    }
-    
-}
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills);
-});
 
 ///////////////////////////////////////////////////////////
 // pour gérer la timeline au niveau de expérience
